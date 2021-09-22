@@ -17,9 +17,9 @@ def get_code(link):
     code=bsmId1+"|"+bssId1
     return(code)
 
+st.title(f"Betfair betslip link creator")
 
 PIDcode=st.sidebar.text_input('Enter PID')
-
 prelink='http://ads.betfair.com/redirect.aspx?pid='+PIDcode+'bid=9810&redirecturl=https://www.betfair.com/sport/betslip?bets='
 
 link1 = st.sidebar.text_input('Enter link 1')
