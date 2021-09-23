@@ -315,12 +315,12 @@ selections = [1,2,3,4,5,6]
 acca = st.sidebar.selectbox(
     "Choose number of selections in acca:", selections, index=0)
 
-link1 = st.sidebar.text_input('Enter link')
+link1 = st.sidebar.text_input('Enter raw code from Paddy Power')
 
 if link1 is not '':
     link1=link1
 else:
-    st.write("You must input a link")
+    st.write("You must enter the raw code from Paddy Power")
     st.stop()
 
 if acca ==1:
