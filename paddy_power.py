@@ -216,13 +216,7 @@ def get_code5(link):
     selectionId5s=selectionId5[0]
     link6=selectionId5[1]
 
-    code5=marketId5+"|"+selectionId5s
-    
-    marketId6=link6.split('"',1)
-    marketId6=marketId6[1]
-    marketId6=marketId6.split('"',1)
-    marketId6=marketId6[0]
-    
+    code5=marketId5+"|"+selectionId5s    
     
     code=code1+"|SIMPLE_SELECTION|%26leg%3D"+code2+"|SIMPLE_SELECTION|%26leg%3D"+code3+"|SIMPLE_SELECTION|%26leg%3D"+code4+"|SIMPLE_SELECTION|%26leg%3D"+code5+"|SIMPLE_SELECTION|%0A"
     return(code)
@@ -345,14 +339,5 @@ else:
     
 prelink='https://media.paddypower.com/redirect.aspx?pid='+PIDcode+'&bid=7049&redirectURL=https://www.paddypower.com/bet%3Faction%3DaddLegs%26leg%3D'
 
-
-
 st.write(prelink+final_link)
 
-
-
-#if link1 is not '':
- #   code1=get_code(link1)
-#else:
- #   st.write("You must add at least one link")
-  #  st.stop()
